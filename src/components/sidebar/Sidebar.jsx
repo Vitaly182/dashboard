@@ -11,68 +11,75 @@ import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import ExitToAppOutlinedIcon from '@mui/icons-material/ExitToAppOutlined';
+import { Link } from 'react-router-dom'
 
 
 const Sidebar = () => {
     return (
         <div className='sidebar'>
             <div className="top">
-                <span className="logo">Project</span>
+                <Link to='/' style={{ textDecoration: 'none' }}>
+                    <span className="logo">Project</span>
+                </Link>
             </div>
             <hr />
             <div className="center">
                 <ul>
                     <p className="title">MAIN</p>
                     <li>
-                        <DashboardIcon className='icon'/>
+                        <DashboardIcon className='icon' />
                         <span>Dashboard</span>
                     </li>
                     <p className="title">LISTS</p>
+                    <Link to='/users' style={{ textDecoration: 'none' }}>
+                        <li>
+                            <PersonOutlineOutlinedIcon className='icon' />
+                            <span>Users</span>
+                        </li>
+                    </Link>
+                    <Link to='/products' style={{ textDecoration: 'none' }}>
+                        <li>
+                            <CategoryIcon className='icon' />
+                            <span>Products</span>
+                        </li>
+                    </Link>
                     <li>
-                        <PersonOutlineOutlinedIcon className='icon'/>
-                        <span>Users</span>
-                    </li>
-                    <li>
-                        <CategoryIcon className='icon'/>
-                        <span>Products</span>
-                    </li>
-                    <li>
-                        <PaymentIcon className='icon'/>
+                        <PaymentIcon className='icon' />
                         <span>Orders</span>
                     </li>
                     <li>
-                        <LocalShippingIcon className='icon'/>
+                        <LocalShippingIcon className='icon' />
                         <span>Delivery</span>
                     </li>
                     <p className="title">USEFUL</p>
                     <li>
-                        <AssessmentIcon className='icon'/>
+                        <AssessmentIcon className='icon' />
                         <span>Stats</span>
                     </li>
                     <li>
-                        <NotificationsNoneIcon className='icon'/>
+                        <NotificationsNoneIcon className='icon' />
                         <span>Notifications</span>
                     </li>
                     <p className="title">SERVICE</p>
                     <li>
-                        <SettingsSystemDaydreamIcon className='icon'/>
+                        <SettingsSystemDaydreamIcon className='icon' />
                         <span>System Health</span>
                     </li>
                     <li>
-                        <PsychologyOutlinedIcon className='icon'/>
+                        <PsychologyOutlinedIcon className='icon' />
                         <span>Logs</span>
                     </li>
                     <li>
-                        <SettingsApplicationsIcon className='icon'/>
+                        <SettingsApplicationsIcon className='icon' />
                         <span>Settings</span>
                     </li>
                     <p className="title">USER</p>
                     <li>
-                        <AccountCircleOutlinedIcon className='icon'/>
+                        <AccountCircleOutlinedIcon className='icon' />
                         <span>Profile</span>
                     </li>
                     <li>
-                        <ExitToAppOutlinedIcon className='icon'/>
+                        <ExitToAppOutlinedIcon className='icon' />
                         <span>Logout</span>
                     </li>
                 </ul>
