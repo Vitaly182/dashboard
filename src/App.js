@@ -4,7 +4,7 @@ import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import { userInputs, productInputs } from "./formSource";
+import { userInputs, productInputs } from "./formSource.js";
 import './style/dark.scss'
 import { useContext } from "react";
 import { DarkModeContext } from './contex/darkModeContext'
